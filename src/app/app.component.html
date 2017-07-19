@@ -1,0 +1,30 @@
+<clr-main-container>
+  <clr-header>
+    <div class="branding">
+      <a href="#" class="nav-link">
+        <span class="clr-icon clr-clarity-logo"></span>
+        <span class="title">Humblelab - Angularified</span>
+      </a>
+    </div>
+    <div class="header-actions">
+    </div>
+  </clr-header>
+  <nav class="sub-nav" [clr-nav-level]="1">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#" [routerLink]="['/home']" routerLinkActive="active">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" [routerLink]="['/about']" routerLinkActive="active">About</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#" [routerLink]="['/vmlist']" routerLinkActive="active">VM List</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="content-container">
+    <div class="content-area">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</clr-main-container>

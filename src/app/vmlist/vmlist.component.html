@@ -1,0 +1,16 @@
+<div>
+<clr-datagrid>
+    <clr-dg-column [clrDgField]="'name'">Name</clr-dg-column>
+    <clr-dg-column [clrDgField]="'power_state'">Power State</clr-dg-column>
+    <clr-dg-column [clrDgField]="'memory_size_MiB'">Memory(MB)</clr-dg-column>
+    <clr-dg-column [clrDgField]="'cpu_count'">CPU Count</clr-dg-column>
+
+    <clr-dg-row *clrDgItems="let vm of vmlist">
+        <clr-dg-cell>{{vm.name}}</clr-dg-cell>
+        <clr-dg-cell>{{vm.power_state}}</clr-dg-cell>
+        <clr-dg-cell>{{vm.memory_size_MiB}}</clr-dg-cell>
+        <clr-dg-cell>{{vm.cpu_count}}</clr-dg-cell>
+    </clr-dg-row>
+
+</clr-datagrid>
+  </div>
