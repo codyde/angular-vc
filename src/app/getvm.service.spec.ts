@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { GetvmService } from './getvm.service';
+import { VcenterService } from './getvm.service';
 
 describe('GetvmService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [GetvmService]
+      providers: [VcenterService]
     });
   });
 
-  it('should be created', inject([GetvmService], (service: GetvmService) => {
+  it('should be created', inject([VcenterService], (service: VcenterService) => {
     expect(service).toBeTruthy();
   }));
 });
