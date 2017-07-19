@@ -11,13 +11,16 @@ import { AboutComponent } from "./about/about.component";
 import { AuthService } from './auth.service';
 import { VcenterService } from './getvm.service';
 import { VmlistComponent } from './vmlist/vmlist.component';
+import { NsxwireService } from './nsxwire.service';
+import { NsxlistComponent } from './nsxlist/nsxlist.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         AboutComponent,
         HomeComponent,
-        VmlistComponent
+        VmlistComponent,
+        NsxlistComponent
     ],
     imports: [
         BrowserAnimationsModule,
@@ -27,7 +30,7 @@ import { VmlistComponent } from './vmlist/vmlist.component';
         ClarityModule.forRoot(),
         ROUTING
     ],
-    providers: [AuthService, VcenterService],
+    providers: [AuthService, VcenterService, NsxwireService],
     bootstrap: [AppComponent]
 })
 export class AppModule {
